@@ -79,7 +79,7 @@ for i in range(1,2000):  #why 2000? just because
             except:
                 print("NONE")
 
-    source = requests.get("https://yts.am/browse-movies?page={}".format(i)).text
+    source = requests.get("https://yts.lt/browse-movies?page={}".format(i)).text
     soup = BeautifulSoup(source,features='html.parser')
 
     if source == "":
